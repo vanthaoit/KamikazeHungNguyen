@@ -2,6 +2,7 @@
 {
 	public class DbFactory : Disposable, IDbFactory
 	{
+		//
 		private KamikazeHungNguyenDbContext dbContext;
 
 		public KamikazeHungNguyenDbContext Init()
