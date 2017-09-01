@@ -4,6 +4,7 @@ namespace KamikazeHungNguyen.Data.Infrastructure
 {
 	public class Disposable : IDisposable
 	{
+
 		private bool isDisposed;
 
 		~Disposable()
