@@ -11,16 +11,16 @@ namespace KamikazeHungNguyen.Data
 			Configuration.LazyLoadingEnabled = false;
 		}
 
-		private DbSet<Error> Errors { set; get; }
-		private DbSet<Footer> Footers { set; get; }
-		private DbSet<Menu> Menus { set; get; }
-		private DbSet<MenuGroup> MenuGroups { set; get; }
+		public DbSet<Error> Errors { set; get; }
+		public DbSet<Footer> Footers { set; get; }
+		public DbSet<Menu> Menus { set; get; }
+		public DbSet<MenuGroup> MenuGroups { set; get; }
 
-		private DbSet<Product> Products { set; get; }
-		private DbSet<ProductCategory> ProductCategorys { set; get; }
-		private DbSet<ProductTag> ProductTags { set; get; }
-		private DbSet<Tag> Tags { set; get; }
-		private DbSet<Permission> Permissions { set; get; }
+		public DbSet<Product> Products { set; get; }
+		public DbSet<ProductCategory> ProductCategories { set; get; }
+		public DbSet<ProductTag> ProductTags { set; get; }
+		public DbSet<Tag> Tags { set; get; }
+		public DbSet<Permission> Permissions { set; get; }
 
 		protected override void OnModelCreating(DbModelBuilder builder)
 		{

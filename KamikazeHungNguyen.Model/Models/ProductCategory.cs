@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using KamikazeHungNguyen.Model.Abstract;
 
 namespace KamikazeHungNguyen.Model.Models
 {
 	[Table("ProductCategories")]
-	public class ProductCategory
+	public class ProductCategory:Auditable
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
